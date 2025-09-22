@@ -1,5 +1,23 @@
 import React, { useState } from "react";
 
+function Navigation() {
+  return (
+    <ul className="nav-ul">
+      <li className="nav-li">
+        <a className="nav-link">Home</a>
+      </li>
+      <li className="nav-li">
+        <a className="nav-link">About</a>
+      </li>
+      <li className="nav-li">
+        <a className="nav-link">Work</a>
+      </li>
+      <li className="nav-li">
+        <a className="nav-link">Contact</a>
+      </li>
+    </ul>
+  );
+}
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,6 +41,9 @@ const Navbar = () => {
               alt="toggle"
             />
           </button>
+          <nav className="hidden sm:flex">
+            <Navigation />
+          </nav>
         </div>
       </div>
     </div>
