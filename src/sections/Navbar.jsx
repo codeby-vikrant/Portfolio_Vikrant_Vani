@@ -11,6 +11,9 @@ const Navbar = () => {
           >
             Vikrant
           </a>
+          <button>
+            <img src="assets/menu.svg" className="w-6 h-6" alt="toggle" />
+          </button>
         </div>
       </div>
     </div>
