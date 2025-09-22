@@ -46,6 +46,13 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
+      {isOpen && (
+        <div className="block overflow-hidden text-center sm:hidden">
+          <nav className="pb-5">
+            <Navigation />
+          </nav>
+        </div>
+      )}
     </div>
   );
 };
