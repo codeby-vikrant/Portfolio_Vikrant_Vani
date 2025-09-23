@@ -1,3 +1,5 @@
+import Card from "../components/Card";
+
 const About = () => {
   return (
     <section className="c-space section-spacing">
@@ -19,7 +21,33 @@ const About = () => {
           </div>
           <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
-        <div className="grid-default-color grid-2"></div>
+        <div className="grid-default-color grid-2">
+          <div className="flex items-center justify-center w-full h-full">
+            <p className="flex items-end text-5xl text-gray-500">
+              CODING IS FUN
+            </p>
+            <Card
+              text="Coding"
+              style={{ rotate: "75deg", top: "30%", left: "20%" }}
+            />
+            <Card
+              text="Designing"
+              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+            />
+            <Card
+              text="Testing"
+              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
+            />
+            <Card
+              text="Presentation"
+              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
+            />
+            <Card
+              text="Engineering"
+              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+            />
+          </div>
+        </div>
         <div className="grid-black-color grid-3"></div>
         <div className="grid-special-color grid-4"></div>
         <div className="grid-default-color grid-5"></div>
