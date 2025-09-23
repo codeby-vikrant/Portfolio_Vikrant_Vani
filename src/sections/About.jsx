@@ -1,6 +1,9 @@
+import { useRef } from "react";
 import Card from "../components/Card";
 
 const About = () => {
+  const grid2Container = useRef();
+
   return (
     <section className="c-space section-spacing">
       <h2 className="text-heading">About Me</h2>
@@ -22,41 +25,52 @@ const About = () => {
           <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
         <div className="grid-default-color grid-2">
-          <div className="flex items-center justify-center w-full h-full">
+          <div
+            ref={grid2Container}
+            className="flex items-center justify-center w-full h-full"
+          >
             <p className="flex items-end text-5xl text-gray-500">
               CODING IS FUN
             </p>
             <Card
               text="Coding"
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              containerRef={grid2Container}
             />
             <Card
               text="Designing"
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+              containerRef={grid2Container}
             />
             <Card
               text="Testing"
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
+              containerRef={grid2Container}
             />
             <Card
               text="Presentation"
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
+              containerRef={grid2Container}
             />
             <Card
               text="Engineering"
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              containerRef={grid2Container}
             />
             <Card
               image="assets/react.svg"
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
+              containerRef={grid2Container}
             />
             <Card
               image="assets/javascript.svg"
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+              containerRef={grid2Container}
             />
             <Card
               image="assets/flutter.svg"
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              containerRef={grid2Container}
             />
           </div>
         </div>
