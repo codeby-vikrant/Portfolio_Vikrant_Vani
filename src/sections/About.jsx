@@ -46,6 +46,18 @@ const About = () => {
               text="Engineering"
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
             />
+            <Card
+              image="assets/react.svg"
+              style={{ rotate: "30deg", top: "70%", left: "70%" }}
+            />
+            <Card
+              image="assets/javascript.svg"
+              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+            />
+            <Card
+              image="assets/flutter.svg"
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+            />
           </div>
         </div>
         <div className="grid-black-color grid-3"></div>
