@@ -9,7 +9,7 @@ export function Frameworks() {
     "javascript",
     "java",
     "nodejs",
-    "git",
+    "github",
     "mysql",
     "mongodb",
     "firebase",
