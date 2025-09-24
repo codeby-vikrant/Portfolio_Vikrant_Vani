@@ -2,19 +2,29 @@
 
 import createGlobe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
-import { useEffect, useRef } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const MOVEMENT_DAMPING = 1400;
+
+const MARKERS = [
+  { location: [19.076, 72.8777], size: 0.07, name: "Mumbai" },
+  { location: [19.2183, 72.9781], size: 0.06, name: "Thane" },
+  { location: [19.163, 72.9997], size: 0.05, name: "Airoli" },
+  { location: [19.0544, 73.1017], size: 0.04, name: "Taloja" },
+  { location: [18.5074, 73.8077], size: 0.03, name: "Kothrud" },
+  { location: [18.559, 73.7868], size: 0.02, name: "Baner" },
+  { location: [18.5913, 73.7389], size: 0.01, name: "Hinjewadi" },
+  { location: [12.9716, 77.5946], size: 0.07, name: "Bangalore" },
+];
 
 const GLOBE_CONFIG = {
   width: 800,
   height: 800,
   onRender: () => {},
   devicePixelRatio: 2,
-  phi: 0,
-  theta: 0.3,
+  phi: 1.35,
+  theta: 0.25,
   dark: 0,
   diffuse: 0.4,
   mapSamples: 16000,
@@ -22,18 +32,7 @@ const GLOBE_CONFIG = {
   baseColor: [0.3, 0.3, 0.3],
   markerColor: [1, 1, 1],
   glowColor: [1, 1, 1],
-  markers: [
-    { location: [14.5995, 120.9842], size: 0.03 },
-    { location: [19.076, 72.8777], size: 0.1 },
-    { location: [23.8103, 90.4125], size: 0.05 },
-    { location: [30.0444, 31.2357], size: 0.07 },
-    { location: [39.9042, 116.4074], size: 0.08 },
-    { location: [-23.5505, -46.6333], size: 0.1 },
-    { location: [19.4326, -99.1332], size: 0.1 },
-    { location: [40.7128, -74.006], size: 0.1 },
-    { location: [34.6937, 135.5022], size: 0.05 },
-    { location: [41.0082, 28.9784], size: 0.06 },
-  ],
+  markers: MARKERS,
 };
 
 export function Globe({ className, config = GLOBE_CONFIG }) {
@@ -94,12 +93,15 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
     };
   }, [rs, config]);
 
+  const [hovered, setHovered] = useState(false);
   return (
     <div
       className={twMerge(
         "mx-auto aspect-[1/1] w-full max-w-[600px]",
         className
       )}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <canvas
         className={twMerge(
@@ -117,6 +119,13 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
           e.touches[0] && updateMovement(e.touches[0].clientX)
         }
       />
+      {hovered && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="rounded-xl bg-black/70 px-4 py-2 text-sm text-white backdrop-blur">
+            I’m open to work in {MARKERS.map((m) => m.name).join(", ")}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
