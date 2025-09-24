@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import {Frameworks} from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef();
@@ -60,17 +61,17 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              image="assets/react.svg"
+              image="assets/vscode.svg"
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
               containerRef={grid2Container}
             />
             <Card
-              image="assets/javascript.svg"
+              image="assets/xcode.svg"
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
               containerRef={grid2Container}
             />
             <Card
-              image="assets/flutter.svg"
+              image="assets/androidstudio.svg"
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
               containerRef={grid2Container}
             />
@@ -93,7 +94,11 @@ const About = () => {
             <CopyEmailButton />
           </div>
         </div>
-        <div className="grid-default-color grid-5"></div>
+        <div className="grid-default-color grid-5">
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+            <Frameworks />
+          </div>
+        </div>
       </div>
     </section>
   );
