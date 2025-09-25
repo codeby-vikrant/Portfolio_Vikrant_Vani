@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,13 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.send("service_xb830sl", "template_wrh5tx9", {
+      from_name: formData.name,
+      to_name: "Vikrant",
+      from_email: formData.email,
+      to_email: "workwithvikrant0111@gmail.com",
+      message: formData.message,
+    });
   };
 
   return (
