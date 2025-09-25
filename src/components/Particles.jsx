@@ -7,13 +7,10 @@ import React, {
 import { twMerge } from "tailwind-merge";
 
 function MousePosition() {
-  const [mousePosition, setMousePosition] =
-    useState <
-    MousePosition >
-    {
-      x: 0,
-      y: 0,
-    };
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
 
   useEffect(() => {
     const handleMouseMove = (event) => {
