@@ -159,6 +159,11 @@ export const mySocials = [
     href: "https://www.instagram.com/vikrantsvani/",
     icon: "/assets/socials/instagram.svg",
   },
+  {
+    name: "Github",
+    href: "https://www.instagram.com/vikrantsvani/",
+    icon: "/assets/socials/github.svg",
+  },
 ];
 
 export const experiences = [
