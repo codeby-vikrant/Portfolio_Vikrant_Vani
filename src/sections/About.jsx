@@ -20,9 +20,12 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Vikrant Vani</p>
             <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend
-              development skills to deliver dynamic and responsive software and
-              mobile/web applications
+              A Final-year IT student at MIT ADT University, passionate about
+              translating real-world problems into intuitive mobile and web
+              applications. Skilled in native Android, iOS, and cross-platform
+              development, with hands-on experience in React.js and React
+              Native. Driven by the full development lifecycle, I’m eager to
+              contribute to innovative tech teams
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -33,25 +36,25 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-              CODING IS FUN
+              CODE|LAUNCH|SECURE
             </p>
             <Card
-              text="Coding"
+              text="Programming"
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Designing"
+              text="UI/UX Design"
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Testing"
+              text="Collaboration"
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Presentation"
+              text="Frameworks"
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
               containerRef={grid2Container}
             />
@@ -81,7 +84,8 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Pune, and open to remote work worldwide
+              Based in Pune, India (IST) — available for remote opportunities
+              and flexible collaboration across global time zones.
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -90,7 +94,9 @@ const About = () => {
         </div>
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
-            <p className="text-center headtext">Do you want to work with me?</p>
+            <p className="text-center headtext">
+              Interested in collaborating or working together? Let's Connect!
+            </p>
             <CopyEmailButton />
           </div>
         </div>
@@ -98,8 +104,12 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I specialize in mobile and web applications, softwares and tools
-              that allow me to build robust and scalable applications
+              I specialize in designing and developing mobile and web
+              applications, utilizing a variety of modern software tools and
+              frameworks to deliver robust, scalable solutions. My approach
+              combines strong technical foundations with a focus on user
+              experience, ensuring that every app I build is not only efficient
+              but also intuitive and adaptable to evolving demands
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

@@ -78,8 +78,9 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            You can reach out to me anytime for a collaboration of mobile/web
-            applications or softwares
+            Feel free to reach out anytime to discuss collaboration
+            opportunities for mobile or web applications, or custom software
+            projects.
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>

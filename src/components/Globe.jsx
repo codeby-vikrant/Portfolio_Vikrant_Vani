@@ -122,7 +122,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       {hovered && (
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="rounded-xl bg-black/70 px-4 py-2 text-sm text-white backdrop-blur">
-            I’m open to work in {MARKERS.map((m) => m.name).join(", ")}
+            Open to roles in {MARKERS.map((m) => m.name).join(", ")} and surrounding areas.
           </div>
         </div>
       )}
