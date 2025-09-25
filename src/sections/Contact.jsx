@@ -2,23 +2,46 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const serviceKey = import.meta.env.EMAIL_JS_SERVICE_KEY;
+  const templateKey = import.meta.env.EMAIL_JS_TEMPLATE_KEY;
+  const publicKey = import.meta.env.EMAIL_JS_PUBLIC_KEY;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs.send("service_xb830sl", "template_wrh5tx9", {
-      from_name: formData.name,
-      to_name: "Vikrant",
-      from_email: formData.email,
-      to_email: "workwithvikrant0111@gmail.com",
-      message: formData.message,
-    });
+    setIsLoading(true);
+    try {
+      await emailjs.send(
+        { serviceKey },
+        { templateKey },
+        {
+          from_name: formData.name,
+          to_name: "Vikrant",
+          from_email: formData.email,
+          to_email: "workwithvikrant0111@gmail.com",
+          message: formData.message,
+        },
+        { publicKey }
+      );
+      setIsLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      setIsLoading(false);
+      alert("Ahh, something went wrong. Please try again.");
+      console.log(error);
+    }
   };
 
   return (
@@ -85,7 +108,7 @@ const Contact = () => {
             className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
             type="submit"
           >
-            SEND
+            {!isLoading ? "Send Message" : "Sending..."}
           </button>
         </form>
       </div>
