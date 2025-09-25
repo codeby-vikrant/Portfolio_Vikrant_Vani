@@ -6,15 +6,31 @@ const Contact = () => {
   const serviceKey = import.meta.env.EMAIL_JS_SERVICE_KEY;
   const templateKey = import.meta.env.EMAIL_JS_TEMPLATE_KEY;
   const publicKey = import.meta.env.EMAIL_JS_PUBLIC_KEY;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [isLoading, setIsLoading] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertType, setAlertType] = useState("success");
+  const [alertMessage, setAlertMessage] = useState("");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const showAlertMessage = (type, message) => {
+    setAlertType(type);
+    setAlertMessage(message);
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 5000);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -32,7 +48,10 @@ const Contact = () => {
         { publicKey }
       );
       setIsLoading(false);
-      alert("Thank you. I will get back to you as soon as possible.");
+      showAlertMessage(
+        "success",
+        "Thank you. I will get back to you as soon as possible."
+      );
       setFormData({
         name: "",
         email: "",
@@ -40,14 +59,17 @@ const Contact = () => {
       });
     } catch (error) {
       setIsLoading(false);
-      alert("Ahh, something went wrong. Please try again.");
+      showAlertMessage(
+        "danger",
+        "Ahh, something went wrong. Please try again."
+      );
       console.log(error);
     }
   };
 
   return (
     <section className="relative flex items-center c-space section-spacing">
-      <Alert />
+      {showAlert && <Alert type={alertType} text={alertMessage} />}
       <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
