@@ -13,7 +13,7 @@ export const myProjects = [
     ],
     href: "https://github.com/codeby-vikrant/SpendLedger-Expense_Tracker",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/spendledger.png",
     tags: [
       {
         id: 1,
@@ -41,7 +41,7 @@ export const myProjects = [
     ],
     href: "https://github.com/codeby-vikrant/MernStack-Thinkboard",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/thinkboard.png",
     tags: [
       {
         id: 1,
@@ -79,7 +79,7 @@ export const myProjects = [
     ],
     href: "https://github.com/codeby-vikrant/Mouse_Movement_Using_Hand_Gestures",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/hand.png",
     tags: [
       {
         id: 1,
@@ -117,7 +117,7 @@ export const myProjects = [
     ],
     href: "https://github.com/shreyas-urankar/Cyber-Protect-Project",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/cyber-website.png",
     tags: [
       {
         id: 1,
