@@ -161,7 +161,7 @@ export const mySocials = [
   },
   {
     name: "Github",
-    href: "https://www.instagram.com/vikrantsvani/",
+    href: "https://github.com/codeby-vikrant",
     icon: "/assets/socials/github.svg",
   },
 ];
