@@ -9,6 +9,9 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <section className="relative flex items-center c-space section-spacing">
@@ -20,7 +23,7 @@ const Contact = () => {
             applications or softwares
           </p>
         </div>
-        <form action="" className="w-full">
+        <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">
             <label htmlFor="name" className="field-label">
               Full Name
@@ -70,7 +73,10 @@ const Contact = () => {
               onChange={handleChange}
             />
           </div>
-          <button className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation">
+          <button
+            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+            type="submit"
+          >
             SEND
           </button>
         </form>
