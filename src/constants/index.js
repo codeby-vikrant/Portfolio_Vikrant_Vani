@@ -29,6 +29,34 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "PillPing",
+    description:
+      "PillPing is a smart medication reminder and tracking app that helps users stay consistent with their medicines through timely notifications, refill tracking, and an intuitive, user-friendly interface—making daily medication management simple and reliable.",
+    subDescription: [
+      "• Developed a cross-platform medication reminder app with a clean, intuitive interface to simplify daily medicine management.",
+      "• Implemented scheduled notifications and dose tracking to ensure timely medication intake and improved adherence.",
+      "• Built refill tracking and medication history features to help users avoid missed refills and monitor usage patterns.",
+      "• Utilized local storage for secure, offline access to medication data without relying on external servers.",
+      "• Followed modular architecture and best development practices to ensure scalability, maintainability, and smooth performance.",
+    ],
+    href: "https://github.com/codeby-vikrant/PillPing-Medication_Reminder_App",
+    logo: "",
+    image: "/assets/projects/pillping.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "ThinkBoard",
     description:
       "ThinkBoard is a dynamic note-taking web application built with the MERN stack. It features a responsive ReactJS front-end and a fast, scalable Node.js/MongoDB backend, enabling efficient creation, reading, updating, and deletion of notes.",
@@ -66,7 +94,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Mouse Movement Using Hand Gestures",
     description:
       "Mouse Movement Using Hand Gestures is a Python-based application that uses OpenCV to track hand movements in real-time, allowing users to control the mouse cursor without any physical devices.",
@@ -104,7 +132,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "CyberProtect Website",
     description:
       "CyberProtect Website is a cybersecurity consultancy web application built with React.js, featuring a modern, interactive interface. CSS and Framer Motion were used to create smooth animations and enhance overall user experience.",
@@ -170,7 +198,7 @@ export const experiences = [
   {
     title: "ReactJS Intern",
     job: "CyberProtect Solutions",
-    date: "March 2025 - July 2025",
+    date: "February 2025 - June 2025",
     contents: [
       "• Engineered a cybersecurity website using React.js, enhancing user engagement and accessibility.",
       "• Conducted security audits and risk assessments, delivering actionable consulting services to improve client resilience.",

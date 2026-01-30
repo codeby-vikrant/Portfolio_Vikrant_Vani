@@ -6,14 +6,13 @@ export function Frameworks() {
     "swift",
     "flutter",
     "react",
-    "javascript",
     "java",
-    "nodejs",
+    "kotlin",
+    "typescript",
     "github",
     "mysql",
     "mongodb",
     "firebase",
-    "tailwind",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">

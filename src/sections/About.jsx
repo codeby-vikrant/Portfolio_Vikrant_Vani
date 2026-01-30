@@ -20,12 +20,10 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Vikrant Vani</p>
             <p className="subtext">
-              A Final-year IT student at MIT ADT University, passionate about
-              translating real-world problems into intuitive mobile and web
-              applications. Skilled in native Android, iOS, and cross-platform
-              development, with hands-on experience in React.js and React
-              Native. Driven by the full development lifecycle, I’m eager to
-              contribute to innovative tech teams
+              A final-year IT student passionate about building intuitive,
+              scalable mobile applications for Android, iOS, and cross-platform
+              platforms, focused on solving real-world problems through
+              thoughtful app design.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-events-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -36,30 +34,30 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-              CODE|LAUNCH|SECURE
+              DESIGN|CODE|LAUNCH
             </p>
             <Card
-              text="Programming"
+              text="Mobile Programming"
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="UI/UX Design"
+              text="UI/UX for Mobile"
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Collaboration"
+              text="Cross-Platform Development"
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Frameworks"
+              text="Android & iOS Development"
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
               containerRef={grid2Container}
             />
             <Card
-              text="Engineering"
+              text="Mobile App Engineering"
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
               containerRef={grid2Container}
             />
@@ -84,8 +82,8 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              Based in Pune, India (IST) — available for remote opportunities
-              and flexible collaboration across global time zones.
+              Based in Roha, Maharashtra (IST) with flexibility for Mumbai and
+              Pune on-site roles and remote work across global teams.
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -104,12 +102,11 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I specialize in designing and developing mobile and web
-              applications, utilizing a variety of modern software tools and
-              frameworks to deliver robust, scalable solutions. My approach
-              combines strong technical foundations with a focus on user
-              experience, ensuring that every app I build is not only efficient
-              but also intuitive and adaptable to evolving demands
+              I specialize in designing and developing mobile applications,
+              using modern tools and frameworks to build scalable, reliable, and
+              user-focused apps. My approach blends strong engineering
+              fundamentals with thoughtful mobile UX, ensuring every app is
+              intuitive, performant, and adaptable to real-world use.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

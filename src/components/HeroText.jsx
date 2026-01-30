@@ -28,7 +28,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Student Developer <br /> Dedicated to Crafting
+            A Student Developer <br /> Dedicated To Crafting
           </motion.p>
           <motion.div
             variants={variants}
@@ -48,7 +48,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            user-focused mobile apps and web-based solutions.
+            User-Focused Mobile Apps.
           </motion.p>
         </div>
       </div>

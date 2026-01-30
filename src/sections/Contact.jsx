@@ -42,12 +42,12 @@ const Contact = () => {
           to_email: "workwithvikrant0111@gmail.com",
           message: formData.message,
         },
-        "fybtotvmadjejUliR"
+        "fybtotvmadjejUliR",
       );
       setIsLoading(false);
       showAlertMessage(
         "success",
-        "Thank you. I will get back to you as soon as possible."
+        "Thank you. I will get back to you as soon as possible.",
       );
       setFormData({
         name: "",
@@ -58,7 +58,7 @@ const Contact = () => {
       setIsLoading(false);
       showAlertMessage(
         "danger",
-        "Ahh, something went wrong. Please try again."
+        "Ahh, something went wrong. Please try again.",
       );
       console.log(error);
     }
@@ -79,8 +79,7 @@ const Contact = () => {
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
             Feel free to reach out anytime to discuss collaboration
-            opportunities for mobile or web applications, or custom software
-            projects.
+            opportunities for mobile applications, or custom software projects.
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
