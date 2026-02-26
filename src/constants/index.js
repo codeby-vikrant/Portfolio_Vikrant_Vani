@@ -57,6 +57,62 @@ export const myProjects = [
   },
   {
     id: 3,
+    title: "NutriSnap",
+    description:
+      "NutriSnap is an AI-powered food analysis app that enables users to upload food images and instantly receive calorie and macronutrient insights, making nutrition tracking smarter, faster, and more accessible.",
+    subDescription: [
+      "• Developed an AI-integrated mobile app using Expo (React Native + TypeScript) to analyze food images and generate structured nutritional insights.",
+      "• Implemented backend API integration with customized prompt engineering to return accurate calorie and macronutrient (protein, carbs, fats) breakdowns.",
+      "• Designed a clean, intuitive results interface to display nutritional data in a clear, user-friendly format for better decision-making.",
+      "• Optimized frontend–backend communication to ensure fast response times and smooth user experience.",
+      "• Built the application with a scalable architecture and production-ready deployment workflow using EAS Build for standalone APK generation.",
+    ],
+    href: "https://github.com/codeby-vikrant/NutriSnap",
+    logo: "",
+    image: "/assets/projects/nutrisnap.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "QuickVault",
+    description:
+      "QuickVault is a secure, offline-first personal productivity vault app that allows users to safely store notes, tasks, and sensitive information locally on their device with a clean, minimal, and distraction-free interface.",
+    subDescription: [
+      "• Developed an offline-first productivity vault app using Expo (React Native) with a strong focus on privacy and data security.",
+      "• Implemented secure local storage to ensure all user data remains on-device without relying on backend servers or cloud services.",
+      "• Designed a clean, minimal, and user-friendly interface to streamline personal organization and daily productivity.",
+      "• Built core features such as secure note storage, task management, and structured data organization for efficient access.",
+      "• Followed modular architecture and best development practices to ensure scalability, maintainability, and smooth app performance.",
+    ],
+    href: "https://github.com/codeby-vikrant/QuickVault",
+    logo: "",
+    image: "/assets/projects/quickvault.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "ThinkBoard",
     description:
       "ThinkBoard is a dynamic note-taking web application built with the MERN stack. It features a responsive ReactJS front-end and a fast, scalable Node.js/MongoDB backend, enabling efficient creation, reading, updating, and deletion of notes.",
@@ -94,7 +150,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Mouse Movement Using Hand Gestures",
     description:
       "Mouse Movement Using Hand Gestures is a Python-based application that uses OpenCV to track hand movements in real-time, allowing users to control the mouse cursor without any physical devices.",
@@ -132,7 +188,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "CyberProtect Website",
     description:
       "CyberProtect Website is a cybersecurity consultancy web application built with React.js, featuring a modern, interactive interface. CSS and Framer Motion were used to create smooth animations and enhance overall user experience.",
