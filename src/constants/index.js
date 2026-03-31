@@ -1,6 +1,34 @@
 export const myProjects = [
   {
     id: 1,
+    title: "Grocit",
+    description:
+      "Grocit is a clean and minimal grocery list app designed for effortless daily shopping. Users can log in, create organized lists with item names, quantities, and category tags, and track progress in real time.",
+    subDescription: [
+      "• Developed a clean and intuitive grocery list app using React Native and Expo for seamless cross-platform usability.",
+      "• Implemented user authentication and structured item management with name, quantity, and category tagging.",
+      "• Designed interactive features such as one-tap completion, dynamic quantity adjustment, and real-time list updates.",
+      "• Built an insights dashboard to visualize completion rate, category distribution, and overall grocery tracking.",
+      "• Focused on modern UI/UX principles to deliver a smooth, minimal, and user-friendly experience.",
+    ],
+    href: "https://github.com/codeby-vikrant/Grocit",
+    logo: "",
+    image: "/assets/projects/grocit.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "SpendLedger",
     description:
       "SpendLedger is a responsive iOS expense tracker built with SwiftUI, offering an intuitive interface and smooth user experience. It allows users to log expenses, visualize spending trends, and track financial habits efficiently.",
@@ -28,7 +56,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Blogo",
     description:
       "Blogo is a modern blogging platform that enables users to read, create, and share blogs seamlessly through a clean and intuitive interface. With secure authentication, real-time content management, and smooth mobile performance, Blogo makes discovering and publishing ideas simple, engaging, and accessible anytime.",
@@ -51,7 +79,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "PillPing",
     description:
       "PillPing is a smart medication reminder and tracking app that helps users stay consistent with their medicines through timely notifications, refill tracking, and an intuitive, user-friendly interface—making daily medication management simple and reliable.",
@@ -79,7 +107,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "NutriSnap",
     description:
       "NutriSnap is an AI-powered food analysis app that enables users to upload food images and instantly receive calorie and macronutrient insights, making nutrition tracking smarter, faster, and more accessible.",
@@ -107,7 +135,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "QuickVault",
     description:
       "QuickVault is a secure, offline-first personal productivity vault app that allows users to safely store notes, tasks, and sensitive information locally on their device with a clean, minimal, and distraction-free interface.",
@@ -135,7 +163,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "ThinkBoard",
     description:
       "ThinkBoard is a dynamic note-taking web application built with the MERN stack. It features a responsive ReactJS front-end and a fast, scalable Node.js/MongoDB backend, enabling efficient creation, reading, updating, and deletion of notes.",
@@ -173,7 +201,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Mouse Movement Using Hand Gestures",
     description:
       "Mouse Movement Using Hand Gestures is a Python-based application that uses OpenCV to track hand movements in real-time, allowing users to control the mouse cursor without any physical devices.",
@@ -211,7 +239,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "CyberProtect Website",
     description:
       "CyberProtect Website is a cybersecurity consultancy web application built with React.js, featuring a modern, interactive interface. CSS and Framer Motion were used to create smooth animations and enhance overall user experience.",
