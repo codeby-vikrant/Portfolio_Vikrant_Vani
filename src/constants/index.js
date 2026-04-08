@@ -276,6 +276,39 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 10,
+    title: "SubBandhu",
+    description:
+      "A subscription management app built with React Native (Expo) featuring dynamic balance tracking, renewal management, analytics via PostHog, and authentication with Clerk.",
+    subDescription: [
+      "• Implemented dynamic subscription tracking with editable balance and renewal dates.",
+      "• Integrated PostHog analytics to track user behavior and app interactions.",
+      "• Designed clean and intuitive UI components focusing on usability and performance.",
+      "• Structured reusable components and modular architecture for scalability and maintainability.",
+      "• Managed state effectively to handle real-time updates and user data changes.",
+    ],
+    href: "https://github.com/codeby-vikrant/SubBandhu",
+    logo: "",
+    image: "/assets/projects/subbandhu.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 3,
+        name: "Javascript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [
