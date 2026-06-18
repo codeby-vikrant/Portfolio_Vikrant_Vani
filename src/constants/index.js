@@ -1,141 +1,6 @@
 export const myProjects = [
   {
     id: 1,
-    title: "Grocit",
-    description:
-      "Grocit is a clean and minimal grocery list app designed for effortless daily shopping. Users can log in, create organized lists with item names, quantities, and category tags, and track progress in real time.",
-    subDescription: [
-      "• Developed a clean and intuitive grocery list app using React Native and Expo for seamless cross-platform usability.",
-      "• Implemented user authentication and structured item management with name, quantity, and category tagging.",
-      "• Designed interactive features such as one-tap completion, dynamic quantity adjustment, and real-time list updates.",
-      "• Built an insights dashboard to visualize completion rate, category distribution, and overall grocery tracking.",
-      "• Focused on modern UI/UX principles to deliver a smooth, minimal, and user-friendly experience.",
-    ],
-    href: "https://github.com/codeby-vikrant/Grocit",
-    logo: "",
-    image: "/assets/projects/grocit.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "React Native",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "TypeScript",
-        path: "/assets/logos/typescript.svg",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "SpendLedger",
-    description:
-      "SpendLedger is a responsive iOS expense tracker built with SwiftUI, offering an intuitive interface and smooth user experience. It allows users to log expenses, visualize spending trends, and track financial habits efficiently.",
-    subDescription: [
-      "• Developed a responsive iOS expense tracker with an intuitive SwiftUI interface for seamless navigation and usability.",
-      "• Leveraged Swift’s high performance and SwiftUI’s declarative syntax to ensure smooth animations and fast data handling.",
-      "• Implemented expense categorization, tagging, and interactive charts for clear visualization of spending trends.",
-      "• Integrated Core Data for secure local storage and offline access to user transactions.",
-      "• Followed MVVM architecture and best coding practices to create scalable, maintainable, and efficient code.",
-    ],
-    href: "https://github.com/codeby-vikrant/SpendLedger-Expense_Tracker",
-    logo: "",
-    image: "/assets/projects/spendledger.png",
-    tags: [
-      {
-        id: 1,
-        name: "SwiftUI",
-        path: "/assets/logos/swift.svg",
-      },
-      {
-        id: 2,
-        name: "MVVM",
-        path: "/assets/xcode.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Blogo",
-    description:
-      "Blogo is a modern blogging platform that enables users to read, create, and share blogs seamlessly through a clean and intuitive interface. With secure authentication, real-time content management, and smooth mobile performance, Blogo makes discovering and publishing ideas simple, engaging, and accessible anytime.",
-    subDescription: [
-      "• Developed a cross-platform blogging application with a clean and intuitive interface for reading and publishing blogs.",
-      "• Implemented secure user authentication and session management to allow users to create and manage their own posts.",
-      "• Built blog creation, viewing, and management features enabling seamless content publishing and discovery.",
-      "• Integrated cloud backend services for real-time data storage, synchronization, and efficient content retrieval.",
-      "• Followed modular architecture and modern state management practices to ensure scalability, maintainability, and smooth app performance.",
-    ],
-    href: "https://github.com/codeby-vikrant/Blogo",
-    logo: "",
-    image: "/assets/projects/blogo.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Flutter",
-        path: "/assets/logos/flutter.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "PillPing",
-    description:
-      "PillPing is a smart medication reminder and tracking app that helps users stay consistent with their medicines through timely notifications, refill tracking, and an intuitive, user-friendly interface—making daily medication management simple and reliable.",
-    subDescription: [
-      "• Developed a cross-platform medication reminder app with a clean, intuitive interface to simplify daily medicine management.",
-      "• Implemented scheduled notifications and dose tracking to ensure timely medication intake and improved adherence.",
-      "• Built refill tracking and medication history features to help users avoid missed refills and monitor usage patterns.",
-      "• Utilized local storage for secure, offline access to medication data without relying on external servers.",
-      "• Followed modular architecture and best development practices to ensure scalability, maintainability, and smooth performance.",
-    ],
-    href: "https://github.com/codeby-vikrant/PillPing-Medication_Reminder_App",
-    logo: "",
-    image: "/assets/projects/pillping.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "React Native",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "TypeScript",
-        path: "/assets/logos/typescript.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "NutriSnap",
-    description:
-      "NutriSnap is an AI-powered food analysis app that enables users to upload food images and instantly receive calorie and macronutrient insights, making nutrition tracking smarter, faster, and more accessible.",
-    subDescription: [
-      "• Developed an AI-integrated mobile app using Expo (React Native + TypeScript) to analyze food images and generate structured nutritional insights.",
-      "• Implemented backend API integration with customized prompt engineering to return accurate calorie and macronutrient (protein, carbs, fats) breakdowns.",
-      "• Designed a clean, intuitive results interface to display nutritional data in a clear, user-friendly format for better decision-making.",
-      "• Optimized frontend–backend communication to ensure fast response times and smooth user experience.",
-      "• Built the application with a scalable architecture and production-ready deployment workflow using EAS Build for standalone APK generation.",
-    ],
-    href: "https://github.com/codeby-vikrant/NutriSnap",
-    logo: "",
-    image: "/assets/projects/nutrisnap.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "React Native",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "TypeScript",
-        path: "/assets/logos/typescript.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
     title: "QuickVault",
     description:
       "QuickVault is a secure, offline-first personal productivity vault app that allows users to safely store notes, tasks, and sensitive information locally on their device with a clean, minimal, and distraction-free interface.",
@@ -163,7 +28,125 @@ export const myProjects = [
     ],
   },
   {
-    id: 7,
+    id: 2,
+    title: "Grocit",
+    description:
+      "Grocit is a clean and minimal grocery list app designed for effortless daily shopping. Users can log in, create organized lists with item names, quantities, and category tags, and track progress in real time.",
+    subDescription: [
+      "• Developed a clean and intuitive grocery list app using React Native and Expo for seamless cross-platform usability.",
+      "• Implemented user authentication and structured item management with name, quantity, and category tagging.",
+      "• Designed interactive features such as one-tap completion, dynamic quantity adjustment, and real-time list updates.",
+      "• Built an insights dashboard to visualize completion rate, category distribution, and overall grocery tracking.",
+      "• Focused on modern UI/UX principles to deliver a smooth, minimal, and user-friendly experience.",
+    ],
+    href: "https://github.com/codeby-vikrant/Grocit",
+    logo: "",
+    image: "/assets/projects/grocit.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Eventix",
+    description:
+      "Eventix is a modern full-stack event management platform that enables users to create, organize, and manage events while providing seamless RSVP functionality through secure authentication, shareable invitation links, and a responsive user experience.",
+    subDescription: [
+      "• Developed a full-stack event management platform using Next.js, TypeScript, Prisma ORM, PostgreSQL (Neon), and Neon Auth.",
+      "• Implemented secure user authentication, protected routes, session management, and event ownership controls for enhanced security.",
+      "• Designed an RSVP system with unique invitation tokens, allowing users to share event links and track attendee responses efficiently.",
+      "• Integrated Prisma ORM with PostgreSQL to manage relational data models for users, events, and RSVPs while ensuring scalability and performance.",
+      "• Created a responsive and modern user interface using Tailwind CSS and shadcn/ui components, optimized for both desktop and mobile devices.",
+      "• Deployed the application on Vercel with environment variable management and production-ready deployment workflows.",
+    ],
+    href: "https://github.com/codeby-vikrant/Eventix",
+    logo: "",
+    image: "/assets/projects/eventix.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 3,
+        name: "Tailwind",
+        path: "/assets/logos/tailwind.svg",
+      },
+      {
+        id: 4,
+        name: "PostgresSQL",
+        path: "/assets/logos/postgres.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Blogo",
+    description:
+      "Blogo is a modern blogging platform that enables users to read, create, and share blogs seamlessly through a clean and intuitive interface. With secure authentication, real-time content management, and smooth mobile performance, Blogo makes discovering and publishing ideas simple, engaging, and accessible anytime.",
+    subDescription: [
+      "• Developed a cross-platform blogging application with a clean and intuitive interface for reading and publishing blogs.",
+      "• Implemented secure user authentication and session management to allow users to create and manage their own posts.",
+      "• Built blog creation, viewing, and management features enabling seamless content publishing and discovery.",
+      "• Integrated cloud backend services for real-time data storage, synchronization, and efficient content retrieval.",
+      "• Followed modular architecture and modern state management practices to ensure scalability, maintainability, and smooth app performance.",
+    ],
+    href: "https://github.com/codeby-vikrant/Blogo",
+    logo: "",
+    image: "/assets/projects/blogo.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Flutter",
+        path: "/assets/logos/flutter.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "PillPing",
+    description:
+      "PillPing is a smart medication reminder and tracking app that helps users stay consistent with their medicines through timely notifications, refill tracking, and an intuitive, user-friendly interface—making daily medication management simple and reliable.",
+    subDescription: [
+      "• Developed a cross-platform medication reminder app with a clean, intuitive interface to simplify daily medicine management.",
+      "• Implemented scheduled notifications and dose tracking to ensure timely medication intake and improved adherence.",
+      "• Built refill tracking and medication history features to help users avoid missed refills and monitor usage patterns.",
+      "• Utilized local storage for secure, offline access to medication data without relying on external servers.",
+      "• Followed modular architecture and best development practices to ensure scalability, maintainability, and smooth performance.",
+    ],
+    href: "https://github.com/codeby-vikrant/PillPing-Medication_Reminder_App",
+    logo: "",
+    image: "/assets/projects/pillping.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "ThinkBoard",
     description:
       "ThinkBoard is a dynamic note-taking web application built with the MERN stack. It features a responsive ReactJS front-end and a fast, scalable Node.js/MongoDB backend, enabling efficient creation, reading, updating, and deletion of notes.",
@@ -201,7 +184,96 @@ export const myProjects = [
     ],
   },
   {
+    id: 7,
+    title: "SpendLedger",
+    description:
+      "SpendLedger is a responsive iOS expense tracker built with SwiftUI, offering an intuitive interface and smooth user experience. It allows users to log expenses, visualize spending trends, and track financial habits efficiently.",
+    subDescription: [
+      "• Developed a responsive iOS expense tracker with an intuitive SwiftUI interface for seamless navigation and usability.",
+      "• Leveraged Swift’s high performance and SwiftUI’s declarative syntax to ensure smooth animations and fast data handling.",
+      "• Implemented expense categorization, tagging, and interactive charts for clear visualization of spending trends.",
+      "• Integrated Core Data for secure local storage and offline access to user transactions.",
+      "• Followed MVVM architecture and best coding practices to create scalable, maintainable, and efficient code.",
+    ],
+    href: "https://github.com/codeby-vikrant/SpendLedger-Expense_Tracker",
+    logo: "",
+    image: "/assets/projects/spendledger.png",
+    tags: [
+      {
+        id: 1,
+        name: "SwiftUI",
+        path: "/assets/logos/swift.svg",
+      },
+      {
+        id: 2,
+        name: "MVVM",
+        path: "/assets/xcode.svg",
+      },
+    ],
+  },
+  {
     id: 8,
+    title: "NutriSnap",
+    description:
+      "NutriSnap is an AI-powered food analysis app that enables users to upload food images and instantly receive calorie and macronutrient insights, making nutrition tracking smarter, faster, and more accessible.",
+    subDescription: [
+      "• Developed an AI-integrated mobile app using Expo (React Native + TypeScript) to analyze food images and generate structured nutritional insights.",
+      "• Implemented backend API integration with customized prompt engineering to return accurate calorie and macronutrient (protein, carbs, fats) breakdowns.",
+      "• Designed a clean, intuitive results interface to display nutritional data in a clear, user-friendly format for better decision-making.",
+      "• Optimized frontend–backend communication to ensure fast response times and smooth user experience.",
+      "• Built the application with a scalable architecture and production-ready deployment workflow using EAS Build for standalone APK generation.",
+    ],
+    href: "https://github.com/codeby-vikrant/NutriSnap",
+    logo: "",
+    image: "/assets/projects/nutrisnap.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "SubBandhu",
+    description:
+      "A subscription management app built with React Native (Expo) featuring dynamic balance tracking, renewal management, analytics via PostHog, and authentication with Clerk.",
+    subDescription: [
+      "• Implemented dynamic subscription tracking with editable balance and renewal dates.",
+      "• Integrated PostHog analytics to track user behavior and app interactions.",
+      "• Designed clean and intuitive UI components focusing on usability and performance.",
+      "• Structured reusable components and modular architecture for scalability and maintainability.",
+      "• Managed state effectively to handle real-time updates and user data changes.",
+    ],
+    href: "https://github.com/codeby-vikrant/SubBandhu",
+    logo: "",
+    image: "/assets/projects/subbandhu.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 3,
+        name: "Javascript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
+  {
+    id: 10,
     title: "Mouse Movement Using Hand Gestures",
     description:
       "Mouse Movement Using Hand Gestures is a Python-based application that uses OpenCV to track hand movements in real-time, allowing users to control the mouse cursor without any physical devices.",
@@ -239,7 +311,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     title: "CyberProtect Website",
     description:
       "CyberProtect Website is a cybersecurity consultancy web application built with React.js, featuring a modern, interactive interface. CSS and Framer Motion were used to create smooth animations and enhance overall user experience.",
@@ -273,39 +345,6 @@ export const myProjects = [
         id: 4,
         name: "Git",
         path: "/assets/logos/git.svg",
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: "SubBandhu",
-    description:
-      "A subscription management app built with React Native (Expo) featuring dynamic balance tracking, renewal management, analytics via PostHog, and authentication with Clerk.",
-    subDescription: [
-      "• Implemented dynamic subscription tracking with editable balance and renewal dates.",
-      "• Integrated PostHog analytics to track user behavior and app interactions.",
-      "• Designed clean and intuitive UI components focusing on usability and performance.",
-      "• Structured reusable components and modular architecture for scalability and maintainability.",
-      "• Managed state effectively to handle real-time updates and user data changes.",
-    ],
-    href: "https://github.com/codeby-vikrant/SubBandhu",
-    logo: "",
-    image: "/assets/projects/subbandhu.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "React Native",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 2,
-        name: "Typescript",
-        path: "/assets/logos/typescript.svg",
-      },
-      {
-        id: 3,
-        name: "Javascript",
-        path: "/assets/logos/javascript.svg",
       },
     ],
   },
